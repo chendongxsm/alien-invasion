@@ -5,7 +5,7 @@ class Settings:
         self.screen_width = 640
         self.screen_height = 480
         self.bg_color = (230, 230, 230)
-        self.ship_speed_factor = 0.5
+
 
         # 子弹设置
         self.bullet_speed_factor = 0.1
@@ -18,3 +18,7 @@ class Settings:
         self.alien_speed_factor = 0.2
         self.alien_drop_speed = 10
         self.fleet_direction = 1
+
+        # 飞船设置
+        self.ship_speed_factor = 0.5
+        self.ship_limit = 3
