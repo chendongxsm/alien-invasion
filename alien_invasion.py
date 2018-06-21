@@ -6,7 +6,6 @@ import game_functions as gf
 from pygame.sprite import Group
 
 
-
 def run_game():
     pygame.init()
     ai_settings = Settings()
@@ -22,8 +21,9 @@ def run_game():
     while True:
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        gf.update_bullets(bullets)
-        gf.update_aliens(ai_settings, aliens)
+        gf.update_bullets(bullets, aliens, ai_settings, screen, ship)
+        gf.update_aliens(ai_settings, aliens, ship)
         gf.update_screen(ai_settings, screen, ship, bullets, aliens)
+
 
 run_game()

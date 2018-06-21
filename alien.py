@@ -28,4 +28,4 @@ class Alien(Sprite):
         if self.rect.right >= screen_rect.right:
             return True
         elif self.rect.left <= 0:
-            return False
+            return True
